@@ -1,0 +1,34 @@
+1. # ./uts_demo ChangeMe
+2. # mount --bind /proc/27514/ns/uts ~/uts
+3. # ./ns_exec ~/uts /bin/bash
+4. # echo $$
+5. # cat /proc/8490/mounts | grep mq
+6. # readlink /proc/8490/ns/mnt
+7. # ./unshare -m /bin/bash
+8. # readlink /proc/$$/ns/mnt
+9. # umount /dev/mqueue
+10.# cat /proc/$$/mounts | grep mq
+11.# cat /proc/8490/mounts | grep mq
+12.# ./pidns_init_sleep /proc_mount
+13.# ./multi_pdns 7
+14.# grep -H 'Name:.*sleep' /proc?/[1-9]*/status
+15.# umoount /proc?
+16.# ./ns_child_exec -p sh -c 'echo $$'
+17.# ./ns_child_exec -p ./simple_init -v
+      init$./orphan.c
+18.# ./ns_child_exec -p -m ./simple_init
+    init$ mount -t proc proc /proc
+    init$ ps a
+19.# ./ns_child_exec -p ./simple_init -v
+    init$
+20.# ps -C sleep -C simple_init
+21.# ./ns_run -f -n /proc/9147/ns/pid ./orphan
+22.# ./demo_userns
+23.# ./demo_userns x
+24.# ps -C demo_userns -o 'pid uid comm'
+25.# echo '0 1000 1' > /proc/4713/uid_map
+26.# ./ns_child_exec -U  bash
+    $ echo '0 1000 1' > /proc/$$/uid_map
+    bash: echo: write error: Operation not permitted
+    $ cat /proc/$$/status | egrep 'Cap(Inh|Prm|Eff)'
+27.#

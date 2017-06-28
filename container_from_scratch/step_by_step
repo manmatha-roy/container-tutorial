@@ -1,0 +1,11 @@
+1. $ wget https://github.com/ericchiang/containers-from-scratch/releases/download/v0.1.0/rootfs.tar.gz
+2. $ sha256sum rootfs.tar.gz
+3. $ tar -zxf rootfs.tar.gz
+4. $ ls rootfs
+5. $ ls -al rootfs/bin/ls
+6. $ sudo chroot rootfs /bin/bash
+7. # which python
+8. # mount -t proc proc /proc
+9. # pkill top
+10.# sudo unshare -p -f --mount-proc=$PWD/rootfs/proc chroot rootfs /bin/bash
+11.# sudo nsenter --pid=/proc/29840/ns/pid unshare -f --mount-proc=$PWD/rootfs/proc chroot rootfs /bin/bash

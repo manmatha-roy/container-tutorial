@@ -50,8 +50,7 @@ child_handler(int sig)
 /* Perform word expansion on string in 'cmd', allocating and
    returning a vector of words on success or NULL on failure */
 
-static char **
-expand_words(char *cmd)
+static char ** expand_words(char *cmd)
 {
     char **arg_vec;
     int s;

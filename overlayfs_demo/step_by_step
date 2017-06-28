@@ -1,0 +1,1 @@
+sudo mount -t overlay -o lowerdir=./dir1,upperdir=./dir2,workdir=./work overlay ./dir3  

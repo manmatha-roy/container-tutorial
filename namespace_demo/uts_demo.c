@@ -64,8 +64,7 @@ main(int argc, char *argv[])
        the child commences execution in childFunc() */
 
     child_pid = clone(childFunc,
-                    child_stack + STACK_SIZE,   /* Points to start of
-                                                   downwardly growing stack */
+                    child_stack + STACK_SIZE,   /* Points to start of downwardly growing stack */
                     CLONE_NEWUTS | SIGCHLD, argv[1]);
     if (child_pid == -1)
         errExit("clone");

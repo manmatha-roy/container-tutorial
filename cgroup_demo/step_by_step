@@ -1,0 +1,7 @@
+1. $ ls -l /sys/fs/cgroup
+2. $ sudo su
+3. # mkdir /sys/fs/cgroup/memory/demo
+4. # ls -l /sys/fs/cgroup/memory/demo
+5. # echo "100000000" > /sys/fs/cgroup/memory/demo/memory.limit_in_bytes
+6. # echo "0" > /sys/fs/cgroup/memory/demo/memory.swappiness
+7. # echo $$ > /sys/fs/cgroup/memory/demo/tasks

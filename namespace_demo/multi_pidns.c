@@ -34,8 +34,7 @@ static char child_stack[STACK_SIZE];    /* Space for child's stack */
    When the counter reaches 0, recursion stops and the tail child
    executes the sleep(1) program. */
 
-static int
-childFunc(void *arg)
+static int childFunc(void *arg)
 {
     static int first_call = 1;
     long level = (long) arg;
@@ -77,7 +76,8 @@ childFunc(void *arg)
         if (waitpid(child_pid, NULL, 0) == -1)  /* Wait for child */
             errExit("waitpid");
 
-    } else {
+    	} 
+	else {
 
         /* Tail end of recursion: execute sleep(1) */
 
@@ -89,8 +89,7 @@ childFunc(void *arg)
     return 0;
 }
 
-int
-main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
     long levels;
 

@@ -1,0 +1,77 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CMD_SIZE	simple_init.c	91;"	d	file:
+STACK_SIZE	multi_pidns.c	26;"	d	file:
+STACK_SIZE	ns_child_exec.c	47;"	d	file:
+STACK_SIZE	pidns_init_sleep.c	44;"	d	file:
+STACK_SIZE	userns_child_exec.c	125;"	d	file:
+STACK_SIZE	userns_demo.c	39;"	d	file:
+STACK_SIZE	userns_setns_demo.c	66;"	d	file:
+STACK_SIZE	uts_demo.c	48;"	d	file:
+_GNU_SOURCE	multi_pidns.c	7;"	d	file:
+_GNU_SOURCE	ns_child_exec.c	9;"	d	file:
+_GNU_SOURCE	ns_exec.c	7;"	d	file:
+_GNU_SOURCE	ns_run.c	7;"	d	file:
+_GNU_SOURCE	pidns_init_sleep.c	7;"	d	file:
+_GNU_SOURCE	simple_init.c	7;"	d	file:
+_GNU_SOURCE	unshare.c	7;"	d	file:
+_GNU_SOURCE	userns_child_exec.c	7;"	d	file:
+_GNU_SOURCE	userns_demo.c	8;"	d	file:
+_GNU_SOURCE	userns_setns_demo.c	8;"	d	file:
+_GNU_SOURCE	uts_demo.c	8;"	d	file:
+argv	userns_child_exec.c	/^    char **argv;        \/* Command to be executed by child, with arguments *\/$/;"	m	struct:child_args	file:
+childFunc	multi_pidns.c	/^static int childFunc(void *arg)$/;"	f	file:
+childFunc	ns_child_exec.c	/^childFunc(void *arg)$/;"	f	file:
+childFunc	pidns_init_sleep.c	/^static int childFunc(void *arg)             \/* Start function for cloned child *\/$/;"	f	file:
+childFunc	userns_child_exec.c	/^childFunc(void *arg)$/;"	f	file:
+childFunc	userns_demo.c	/^static int  childFunc(void *arg)	\/* Startup function for cloned child *\/$/;"	f	file:
+childFunc	userns_setns_demo.c	/^childFunc(void *arg)$/;"	f	file:
+childFunc	uts_demo.c	/^childFunc(void *arg)$/;"	f	file:
+child_args	userns_child_exec.c	/^struct child_args {$/;"	s	file:
+child_handler	simple_init.c	/^child_handler(int sig)$/;"	f	file:
+child_stack	multi_pidns.c	/^static char child_stack[STACK_SIZE];    \/* Space for child's stack *\/$/;"	v	file:
+child_stack	ns_child_exec.c	/^static char child_stack[STACK_SIZE];    \/* Space for child's stack *\/$/;"	v	file:
+child_stack	pidns_init_sleep.c	/^static char child_stack[STACK_SIZE];    \/* Space for child's stack *\/$/;"	v	file:
+child_stack	userns_child_exec.c	/^static char child_stack[STACK_SIZE];    \/* Space for child's stack *\/$/;"	v	file:
+child_stack	userns_demo.c	/^static char child_stack[STACK_SIZE];    \/* Space for child's stack *\/$/;"	v	file:
+child_stack	userns_setns_demo.c	/^static char child_stack[STACK_SIZE];    \/* Space for child's stack *\/$/;"	v	file:
+child_stack	uts_demo.c	/^static char child_stack[STACK_SIZE];$/;"	v	file:
+errExit	multi_pidns.c	23;"	d	file:
+errExit	ns_child_exec.c	20;"	d	file:
+errExit	ns_exec.c	17;"	d	file:
+errExit	ns_run.c	18;"	d	file:
+errExit	pidns_init_sleep.c	22;"	d	file:
+errExit	simple_init.c	17;"	d	file:
+errExit	unshare.c	16;"	d	file:
+errExit	userns_child_exec.c	22;"	d	file:
+errExit	userns_demo.c	16;"	d	file:
+errExit	userns_setns_demo.c	22;"	d	file:
+errExit	uts_demo.c	20;"	d	file:
+expand_words	simple_init.c	/^expand_words(char *cmd)$/;"	f	file:
+fpe	userns_child_exec.c	40;"	d	file:
+main	multi_pidns.c	/^int main(int argc, char *argv[])$/;"	f
+main	ns_child_exec.c	/^main(int argc, char *argv[])$/;"	f
+main	ns_exec.c	/^main(int argc, char *argv[])$/;"	f
+main	ns_run.c	/^main(int argc, char *argv[])$/;"	f
+main	orphan.c	/^main(int argc, char *argv[])$/;"	f
+main	pidns_init_sleep.c	/^int main(int argc, char *argv[])$/;"	f
+main	simple_init.c	/^main(int argc, char *argv[])$/;"	f
+main	unshare.c	/^main(int argc, char *argv[])$/;"	f
+main	userns_child_exec.c	/^main(int argc, char *argv[])$/;"	f
+main	userns_demo.c	/^int main(int argc, char *argv[])$/;"	f
+main	userns_setns_demo.c	/^main(int argc, char *argv[])$/;"	f
+main	uts_demo.c	/^main(int argc, char *argv[])$/;"	f
+pipe_fd	userns_child_exec.c	/^    int    pipe_fd[2];  \/* Pipe used to synchronize parent and child *\/$/;"	m	struct:child_args	file:
+test_setns	userns_setns_demo.c	/^test_setns(char *pname, int fd)$/;"	f	file:
+update_map	userns_child_exec.c	/^update_map(char *mapping, char *map_file)$/;"	f	file:
+usage	ns_child_exec.c	/^usage(char *pname)$/;"	f	file:
+usage	ns_run.c	/^usage(char *pname)$/;"	f	file:
+usage	simple_init.c	/^usage(char *pname)$/;"	f	file:
+usage	unshare.c	/^usage(char *pname)$/;"	f	file:
+usage	userns_child_exec.c	/^usage(char *pname)$/;"	f	file:
+verbose	simple_init.c	/^static int verbose = 0;$/;"	v	file:
+verbose	userns_child_exec.c	/^static int verbose;$/;"	v	file:

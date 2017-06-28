@@ -22,8 +22,8 @@
 #define errExit(msg)    do { perror(msg); exit(EXIT_FAILURE); \
                         } while (0)
 
-static int              /* Start function for cloned child */
-childFunc(void *arg)
+
+static int childFunc(void *arg)             /* Start function for cloned child */
 {
     printf("childFunc(): PID  = %ld\n", (long) getpid());
     printf("childFunc(): PPID = %ld\n", (long) getppid());
@@ -45,8 +45,7 @@ childFunc(void *arg)
 
 static char child_stack[STACK_SIZE];    /* Space for child's stack */
 
-int
-main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
     pid_t child_pid;
 
